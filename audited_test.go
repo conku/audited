@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/conku/audited"
+	"github.com/conku/qor/test/utils"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/audited"
-	"github.com/qor/qor/test/utils"
 )
 
 type Product struct {
