@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/conku/audited"
+	"github.com/conku/gorm"
 	"github.com/conku/qor/test/utils"
-	"github.com/jinzhu/gorm"
 )
 
 type Product struct {

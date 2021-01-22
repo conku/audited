@@ -1,16 +1,16 @@
 # Audited
 
-Audited is used to record the last User who created and/or updated your [GORM](https://github.com/jinzhu/gorm) model. It does so using a `CreatedBy` and `UpdatedBy` field. While Audited can be used alone (with [GORM](https://github.com/jinzhu/gorm)), it integrates nicely with [QOR](https://github.com/conku/qor) to log and display this extra information.
+Audited is used to record the last User who created and/or updated your [GORM](https://github.com/conku/gorm) model. It does so using a `CreatedBy` and `UpdatedBy` field. While Audited can be used alone (with [GORM](https://github.com/conku/gorm)), it integrates nicely with [QOR](https://github.com/conku/qor) to log and display this extra information.
 
 [![GoDoc](https://godoc.org/github.com/conku/audited?status.svg)](https://godoc.org/github.com/conku/audited)
 
 ### Register GORM Callbacks
 
-Audited utilizes [GORM](https://github.com/jinzhu/gorm) callbacks to log data, so you will need to register callbacks first:
+Audited utilizes [GORM](https://github.com/conku/gorm) callbacks to log data, so you will need to register callbacks first:
 
 ```go
 import (
-  "github.com/jinzhu/gorm"
+  "github.com/conku/gorm"
   "github.com/conku/audited"
 )
 
@@ -34,7 +34,7 @@ type Product struct {
 
 ```go
 import "github.com/conku/audited"
-import "github.com/jinzhu/gorm"
+import "github.com/conku/gorm"
 
 func main() {
   var db, err = gorm.Open("sqlite3", "demo_db")
@@ -57,7 +57,7 @@ func main() {
 }
 ```
 
-[QOR Demo:  http://demo.getqor.com/admin](http://demo.getqor.com/admin)
+[QOR Demo: http://demo.getqor.com/admin](http://demo.getqor.com/admin)
 
 ## License
 
